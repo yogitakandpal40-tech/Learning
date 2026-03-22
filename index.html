@@ -1,85 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Learning Notes</title>
+  <title>My Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background: #f4f4f4;
+      font-family: Arial;
+      display: flex;
     }
 
-    header {
-      background: #007bff;
-      color: white;
-      padding: 15px;
-      text-align: justify;
-      font-size: 16px;
-    }
-
-    nav {
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
       background: #333;
-      padding: 10px;
-      text-align: justify;
+      height: 100vh;
+      padding-top: 20px;
     }
 
-    nav a {
+    .sidebar button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: none;
       color: white;
-      margin: 10px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 300;
+      text-align: left;
+      cursor: pointer;
     }
 
-    nav a:hover {
-      color: yellow;
+    .sidebar button:hover {
+      background: #555;
     }
 
-    .container {
+    /* Content */
+    .content {
+      flex: 1;
       padding: 20px;
     }
 
-    .card {
-      background: white;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 10px;
-      font-weight: normal;
+    .unit {
+      display: none;
+    }
+
+    .active {
+      display: block;
     }
 
     h2 {
-      color: #black;
+      color: black;
     }
 
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #222;
-      color: white;
-      margin-top: 20px;
+    p {
+      color: black;
+      font-weight: 300;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  📚 My Learning Website
-</header>
+<!-- Sidebar -->
+<div class="sidebar">
+  <button onclick="showUnit('u1')">Unit 1</button>
+  <button onclick="showUnit('u2')">Unit 2</button>
+  <button onclick="showUnit('u3')">Unit 3</button>
+  <button onclick="showUnit('u4')">Unit 4</button>
+  <button onclick="showUnit('u5')">Unit 5</button>
+</div>
 
-<nav>
-  <a href="#"></a>
-  <a href="#">Introduction to consumer behaviour</a>
-  <a href="#"></a>
-  <a href="#"></a>
-</nav>
+<!-- Content -->
+<div class="content">
 
-<div class="container">
-
-  <div class="card">
-    <h2><div class="card">
+  <div id="u1" class="unit active">
+    <h2>Unit 1 - Consumer Behaviour</h2>
+    <p><div class="card">
   <h2>Concept of Consumer Behaviour</h2>
   <p>
     Consumer behaviour refers to the study of individuals, groups, or organizations and the processes they use to select, secure, use, and dispose of products and services to satisfy their needs and wants. It helps businesses understand customer preferences and buying decisions.
@@ -103,74 +99,78 @@
 <div class="card">
   <h2>Consumer Decision-Making Process</h2>
   <ul>
-    <li>Problem Recognition: Identifying a need or desire.</li>
-    <li>Information Search: Collecting information about products.</li>
-    <li>Evaluation of Alternatives: Comparing different options.</li>
-    <li>Purchase Decision: Selecting and buying the product.</li>
-    <li><Post-Purchase Behavior: Evaluating satisfaction after purchase.</li>
+    <li><b>Problem Recognition:</b> Identifying a need or desire.</li>
+    <li><b>Information Search:</b> Collecting information about products.</li>
+    <li><b>Evaluation of Alternatives:</b> Comparing different options.</li>
+    <li><b>Purchase Decision:</b> Selecting and buying the product.</li>
+    <li><b>Post-Purchase Behavior:</b> Evaluating satisfaction after purchase.</li>
   </ul>
 </div>
 
 <div class="card">
   <h2>Levels of Consumer Decision-Making</h2>
   <ul>
-    <li>Routine Response Behavior: Low involvement, frequent purchases.</li>
-    <li>Limited Decision-Making: Moderate involvement, few comparisons.</li>
-    <li>Extensive Decision-Making:High involvement, detailed evaluation.</li>
+    <li><b>Routine Response Behavior:</b> Low involvement, frequent purchases.</li>
+    <li><b>Limited Decision-Making:</b> Moderate involvement, few comparisons.</li>
+    <li><b>Extensive Decision-Making:</b> High involvement, detailed evaluation.</li>
   </ul>
 </div>
 
 <div class="card">
   <h2>Types of Consumer Decision-Making</h2>
   <ul>
-    <li>Complex Buying Behavior: High involvement, major differences.</li>
-    <li>Dissonance-Reducing Buying Behavior:High involvement, fewer differences.</li>
-    <li>Habitual Buying Behavior: Low involvement, routine purchase.</li>
-    <li>Variety-Seeking Buying Behavior: Low involvement, brand switching.</li>
+    <li><b>Complex Buying Behavior:</b> High involvement, major differences.</li>
+    <li><b>Dissonance-Reducing Buying Behavior:</b> High involvement, fewer differences.</li>
+    <li><b>Habitual Buying Behavior:</b> Low involvement, routine purchase.</li>
+    <li><b>Variety-Seeking Buying Behavior:</b> Low involvement, brand switching.</li>
   </ul>
+</div>
+
 <div class="card">
- <div class="card">
-  <h2>Types of Consumer Decision Making</h2>
-  <p>
-    A decision is defined as choosing one option from many available alternatives. Decision making is the process of selecting the best option among different choices. It is both a goal-oriented and problem-solving process that helps in taking advantage of opportunities and dealing with threats.
-  </p>
-
-  <p>
-    Decision making can be classified into two types:
-  </p>
-
-  <h3>A. Programmed Decision Making</h3>
-  <p>
-    This type of decision making is used for routine and regular problems. These problems are simple and have predefined solutions, so decisions are made quickly without much thinking. In marketing, these relate to daily purchases or low involvement products.
-  </p>
-  <p>
-    <b>Examples:</b> Daily use products like soap, cooking oil, salt, and groceries.
-  </p>
-
-  <h3>B. Non-Programmed Decision Making</h3>
-  <p>
-    This type is used for new, complex, and unexpected problems. These decisions require careful thinking, information gathering, and evaluation. In marketing, these relate to high involvement purchases or expensive products.
-  </p>
-  <p>
-    <b>Examples:</b> Buying a TV, laptop, car, or house.
-  </p>
-</div>
-</div>
-
-  <h2></h2>
+  <h2>Basic Data Analysis in Consumer Behaviour (Python Example)</h2>
   <pre>
+import pandas as pd
 
+data = pd.read_csv('consumer_data.csv')
+print(data.describe())
+
+preferences = data['preference'].value_counts()
+print(preferences)
   </pre>
-  
-</p>
-    </p>
+</div></p>
+  </div>
+
+  <div id="u2" class="unit">
+    <h2>Unit 2</h2>
+    <p>Yaha Unit 2 ke notes...</p>
+  </div>
+
+  <div id="u3" class="unit">
+    <h2>Unit 3</h2>
+    <p>Yaha Unit 3 ke notes...</p>
+  </div>
+
+  <div id="u4" class="unit">
+    <h2>Unit 4</h2>
+    <p>Yaha Unit 4 ke notes...</p>
+  </div>
+
+  <div id="u5" class="unit">
+    <h2>Unit 5</h2>
+    <p>Yaha Unit 5 ke notes...</p>
   </div>
 
 </div>
 
-<footer>
-  © 2026 My Learning Notes
-</footer>
+<!-- Script -->
+<script>
+function showUnit(unitId) {
+  let units = document.querySelectorAll('.unit');
+  units.forEach(u => u.classList.remove('active'));
+
+  document.getElementById(unitId).classList.add('active');
+}
+</script>
 
 </body>
 </html>
