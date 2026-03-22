@@ -126,23 +126,135 @@
   </ul>
 </div>
 
-<div class="card">
-  <h2>Basic Data Analysis in Consumer Behaviour (Python Example)</h2>
-  <pre>
-import pandas as pd
-
-data = pd.read_csv('consumer_data.csv')
-print(data.describe())
-
-preferences = data['preference'].value_counts()
-print(preferences)
-  </pre>
-</div></p>
-  </div>
-
   <div id="u2" class="unit">
     <h2>Unit 2</h2>
-    <p>Yaha Unit 2 ke notes...</p>
+    <p><!-- Consumer Behavior Notes Section -->
+<h1>Consumer Behavior Notes</h1>
+
+<div class="topic">
+  <h2 onclick="toggleContent(this)">Motivation</h2>
+  <div class="content">
+    <p>Motivation drives consumer behavior. Types include:</p>
+    <ul>
+      <li>Physiological: basic needs (food, water, shelter)</li>
+      <li>Safety: protection from harm</li>
+      <li>Social: belongingness and relationships</li>
+      <li>Esteem: respect, status, achievement</li>
+      <li>Self-actualization: personal growth</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <h2 onclick="toggleContent(this)">Consumer Involvement</h2>
+  <div class="content">
+    <p>Degree of interest or relevance a consumer has in a product:</p>
+    <ul>
+      <li>High involvement: important purchase, careful evaluation</li>
+      <li>Low involvement: routine or low-risk purchase</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <h2 onclick="toggleContent(this)">Personality & Self-Concept</h2>
+  <div class="content">
+    <p>Personality traits and self-perception affect buying behavior:</p>
+    <ul>
+      <li>Personality traits: innovativeness, sociability, risk-taking</li>
+      <li>Self-concept:
+        <ul>
+          <li>Actual self: who consumer thinks they are</li>
+          <li>Ideal self: who consumer wants to be</li>
+          <li>Social self: how others perceive consumer</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <h2 onclick="toggleContent(this)">Perception</h2>
+  <div class="content">
+    <p>How consumers select, organize, and interpret information:</p>
+    <ul>
+      <li>Exposure: noticing stimuli</li>
+      <li>Attention: focusing on stimuli</li>
+      <li>Interpretation: understanding meaning</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <h2 onclick="toggleContent(this)">Learning & Memory</h2>
+  <div class="content">
+    <p>How consumers learn and remember:</p>
+    <ul>
+      <li>Learning: classical, operant, observational</li>
+      <li>Memory:
+        <ul>
+          <li>Sensory: immediate impressions</li>
+          <li>Short-term: temporary info</li>
+          <li>Long-term: stored knowledge & experiences</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <h2 onclick="toggleContent(this)">Attitudes & Changing Attitudes</h2>
+  <div class="content">
+    <p>Learned predispositions affecting behavior:</p>
+    <ul>
+      <li>Cognitive: beliefs</li>
+      <li>Affective: feelings</li>
+      <li>Behavioral: intentions</li>
+      <li>Change strategies: cognitive info, emotional appeal, behavioral trials</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <h2 onclick="toggleContent(this)">Information Processing</h2>
+  <div class="content">
+    <p>How consumers process and act on information:</p>
+    <ul>
+      <li>Exposure → Attention → Comprehension → Acceptance → Retention</li>
+      <li>Influenced by motivation, involvement, and prior knowledge</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .topic {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .topic h2 {
+    cursor: pointer;
+    color: #0077cc;
+    margin: 0;
+  }
+  .content {
+    display: none;
+    padding-top: 10px;
+    color: #555;
+  }
+  .content ul {
+    padding-left: 20px;
+  }
+</style>
+
+<script>
+  function toggleContent(element) {
+    const content = element.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+  }
+</script></p>
   </div>
 
   <div id="u3" class="unit">
